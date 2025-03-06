@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="/pics/setup.jpg" alt="Card 1">
+            <h3>Initial Setup</h3>
+
+            <div class="input-group">
+                <div class="input-item">
+                    <label for="tinit">Initial time (tinit)</label>
+                    <input type="text" id="tinit" name="tinit">
+                </div>
+                <div class="input-item">
+                    <label for="id">Salt (id) </label>
+                    <input type="text" id="id" name="id">
+                </div>
+            </div>
+
+            <label for="k">Number of OTPS (k)</label>
+            <input type="text" id="k" name="k">
+
+            <label for="seed">Seedmaker </label>
+            <input type="text" id="seed" name="seed">
+
+            <button id="AcceptValues">Click after filling values</button>
+            <button id="generateSeed">Generate Seed</button>
+            <button id="generateRoot">Generate Hash Root</button>
+            <button id="showHash"> Show hash root</button>
+
+            <button id="storeValues" style="background-color:#064a93 ; ">Store
+                values on blockchain</button>
+        </div>
+
+        <div class="card">
+            <img src="/pics/Authenticate.png" alt="Card 2">
+            <h3>Authenticate any time</h3>
+
+            <label for="t">Time </label>
+            <input type="text" id="t" name="t">
+
+            <button id="getT">Click after filling</button>
+
+            <button id="generateOTP">Generate OTP</button>
+
+            <button id="generateCommit">Generate Commitment</button>
+
+            <button id="sendCommit" style="background-color: #064a93 ">Send commitment on blockchain</button>
+
+            <button id="showOTP"> Show OTP </button>
+
+            <label for="OTPauth">Enter generated OTP </label>
+            <input type="text" id="OTPauth" name="OTPauth">
+
+            <button id="getOTPauth">Click after filling OTP</button>
+
+            <button id="auth" style="background-color:#064a93">Authenticate</button>
+        </div>
+
+        <div class="card">
+            <img src="/pics/images.png" alt="Card 3" style="height: 150px; width: 170px;">
+            <h3>Reinitialize</h3>
+            <label for="seedR">Seedmaker</label>
+            <input type="text" id="seedR" name="seedR">
+
+            <label for="idR">Id</label>
+            <input type="text" id="idR" name="idR">
+
+            <button id="ReinitialiseValues">Click after filling values</button>
+            <button id="generateSeedR">Generate Seed</button>
+            <button id="generateRootR">Generate Hash Root</button>
+            <button id="showHashR">Show hash root</button>
+            <button id="storeValuesR" style="background-color:#064a93">Store values on blockchain</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script type="module" src="client.js"></script>
+<script type="module" src="authenticator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</html>
