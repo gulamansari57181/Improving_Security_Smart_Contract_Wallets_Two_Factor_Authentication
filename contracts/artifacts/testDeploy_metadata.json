@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"name": "Authenticated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"name": "CommitStored",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"name": "ValuesStored",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "t",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "hashedOTP",
+						"type": "bytes32"
+					}
+				],
+				"name": "authenticate",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_commitment",
+						"type": "bytes32"
+					}
+				],
+				"name": "storeCommitment",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tinit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_id",
+						"type": "uint32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "rootHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "storeValues",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_Deploy.sol": "testDeploy"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_Deploy.sol": {
+			"keccak256": "0x5168f4d94242f014647a1676b1574fa7279068d5292d9f78607ee14850401e1d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b740bae3695b7cd2608a5503e75b050f484dc911e94ae30057d4cbff62b7f0dc",
+				"dweb:/ipfs/Qmd6PcrCaN2ruqmh9fRKq9C7rRJroUasZ7QYEjQ71HN4Ab"
+			]
+		}
+	},
+	"version": 1
+}
