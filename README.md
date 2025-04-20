@@ -2,7 +2,7 @@
 
 This project demonstrates the implementation of a **Two-Factor Authentication (2FA)** framework for Ethereum-based smart contract wallets using **Time-based One-Time Passwords (TOTP)** and **hash chains**. It leverages smart contracts deployed on the Ethereum blockchain using **Remix IDE** to enhance security without external dependencies.
 
-📽️ **Demo Video**: [GitHub Repository](https://drive.google.com/file/d/10bor2B2yFm-F2XYghPzDDfPOKmpK14Dj/view?usp=sharing)
+📽️ **Demo Video**: [!demo of the project](https://drive.google.com/file/d/10bor2B2yFm-F2XYghPzDDfPOKmpK14Dj/view?usp=sharing)
 
 ---
 
