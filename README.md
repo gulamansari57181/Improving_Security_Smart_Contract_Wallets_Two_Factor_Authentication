@@ -141,4 +141,4 @@ The key feature of this project is the integration of a **client-side OTP** to v
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE) (add if applicable).
+This project is open-source and available under the [MIT License](LICENSE) 
